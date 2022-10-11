@@ -15,7 +15,7 @@ const Quiz = ({ question }) => {
 
         if (correct === event) {
             toast.success('Correct Answer,Great!!', { autoClose: 1000, position: toast.POSITION.TOP_CENTER })
-            correct.style.color = 'red';
+
         }
         else {
             toast.warn('Uppss,Wrong Answer', { autoClose: 500, position: toast.POSITION.TOP_CENTER })

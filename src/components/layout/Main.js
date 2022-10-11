@@ -5,7 +5,6 @@ import Header from '../Header/Header';
 export const QuizContext = createContext([]);
 const Main = () => {
     const allQuiz = useLoaderData();
-    console.log(allQuiz);
     return (
 
         <div>

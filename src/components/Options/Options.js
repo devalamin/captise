@@ -2,7 +2,7 @@ import { faCircle } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
 
-const Options = ({ singleOption, handleClick }) => {
+const Options = ({ singleOption, handleClick, ToastContainer }) => {
     const circle = <FontAwesomeIcon icon={faCircle}></FontAwesomeIcon>
     // console.log(singleOption)
     return (
@@ -12,6 +12,8 @@ const Options = ({ singleOption, handleClick }) => {
                 <span className='mr-6 text-sm'>{circle}</span>
                 {singleOption}
             </h2>
+            <ToastContainer></ToastContainer>
+
         </div>
     );
 };

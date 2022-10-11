@@ -1,6 +1,8 @@
 import { faEye } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import Options from '../Options/Options';
 
 const Quiz = ({ question }) => {
@@ -10,8 +12,10 @@ const Quiz = ({ question }) => {
     const eye = <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
 
     const handleClick = (event) => {
+
         if (correct === event) {
-            alert('This Is Correct answear')
+
+            toast.success('Correct Answer,Great!!', { autoClose: 500, position: toast.POSITION.TOP_CENTER })
         }
         else {
             alert('Upps,Wrong Ans')
@@ -29,6 +33,7 @@ const Quiz = ({ question }) => {
                         quizOption.map(singleOption => <Options
                             singleOption={singleOption}
                             handleClick={handleClick}
+                            ToastContainer={ToastContainer}
                         ></Options>)
                     }
 

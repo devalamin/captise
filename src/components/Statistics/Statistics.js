@@ -12,13 +12,16 @@ const Statistics = () => {
         <div>
             <h2 className='sm:text-3xl sm:font-bold text-teal-700'>Statistics</h2>
             <div className='mx-auto border-2 border-teal-200 sm:p-10 sm:m-10'>
-                <LineChart className='bg-teal-200 w-48 h-28' width={500} height={300} data={data}>
-                    <XAxis dataKey="name" />
-                    <YAxis dataKey="total" />
-                    <Line type="monotone" dataKey="total" stroke="#82ca9d" />
-                    <Tooltip></Tooltip>
+                <ResponsiveContainer width='100%' height={400}>
 
-                </LineChart>
+                    <LineChart className='bg-teal-200 w-48 h-28 mx-auto' width={500} height={300} data={data}>
+                        <XAxis dataKey="name" />
+                        <YAxis dataKey="total" />
+                        <Line type="monotone" dataKey="total" stroke="#82ca9d" />
+                        <Tooltip></Tooltip>
+
+                    </LineChart>
+                </ResponsiveContainer>
             </div>
 
 

@@ -6,6 +6,7 @@ import 'react-toastify/dist/ReactToastify.css';
 import Options from '../Options/Options';
 
 const Quiz = ({ question }) => {
+
     const correct = question.correctAnswer;
 
     const quizOption = question.options;

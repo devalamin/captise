@@ -1,4 +1,4 @@
 .nav-items a.active {
     color: goldenrod;
-    border: 1px dotted teal;
+    border-color: teal;
 }

@@ -8,12 +8,12 @@ const Header = () => {
                 <div>
                     <h2 className='text-4xl font-bold text-teal-600'>Captise</h2>
                 </div>
-                <div>
-                    <Link className='text-2xl text-teal-600 mx-3' to='/home'>Home</Link>
-                    <Link className='text-2xl text-teal-600 mx-3' to='/topics'>Topics</Link>
-                    <Link className='text-2xl text-teal-600 mx-3' to='/stats'>Statistics</Link>
-                    <Link className='text-2xl text-teal-600 mx-3' to='/blogs'>Blog</Link>
-                    <Link className='text-2xl text-teal-600 mx-3' to='/about'>About</Link>
+                <div className='flex flex-col sm:flex-row'>
+                    <Link className='text-2xl text-teal-600 my-3 mx-3' to='/home'>Home</Link>
+                    <Link className='text-2xl text-teal-600 my-3 mx-3' to='/topics'>Topics</Link>
+                    <Link className='text-2xl text-teal-600 my-3 mx-3' to='/stats'>Statistics</Link>
+                    <Link className='text-2xl text-teal-600 my-3 mx-3' to='/blogs'>Blog</Link>
+                    <Link className='text-2xl text-teal-600 my-3 mx-3' to='/about'>About</Link>
                 </div>
 
             </div>

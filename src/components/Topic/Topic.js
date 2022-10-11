@@ -13,12 +13,12 @@ const Topic = ({ quiz }) => {
             <div className='shadow-md bg-slate-600 rounded'>
                 <img className='rounded' src={logo} alt="" />
                 <div className='flex justify-between bg-white p-2'>
-                    <h1 className='bg-white p-2 text-2xl'>{name}</h1>
-                    <p className='text-xl text-teal-800'>Questions : {total}</p>
+                    <h1 className='bg-white sm:p-2 sm:text-2xl'>{name}</h1>
+                    <p className='sm:text-xl md:text-xl text-teal-800'>Questions : {total}</p>
                     <Link to={`/topics/${id}`}>
                         <button className='flex items-center '>
-                            <h4 className='text-2xl'>Start</h4>
-                            <p className='ml-2 text-xl text-teal-800'>{rightArrow}</p>
+                            <h4 className='sm:text-2xl'>Start</h4>
+                            <p className='ml-2 sm:text-xl text-teal-800'>{rightArrow}</p>
                         </button></Link>
                 </div>
             </div>

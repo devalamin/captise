@@ -28,11 +28,11 @@ const Quiz = ({ question }) => {
 
     return (
         <div>
-            <div className='relative bg-teal-100 m-10 p-10 shadow-lg'>
-                <span onClick={rightAns} className='cursor-pointer text-xl text-teal-700 absolute right-5 top-5'>{eye}</span>
+            <div className='relative bg-teal-100 sm:m-10 sm:p-10 shadow-lg'>
+                <span onClick={rightAns} className='cursor-pointer sm:text-xl text-teal-700 absolute right-5 top-10'>{eye}</span>
                 <ToastContainer></ToastContainer>
-                <h2 className='text-3xl m-10 text-teal-800'>Quiz: {question.question}</h2>
-                <div className='grid grid-cols-2 gap-8 p-10'>
+                <h2 className='sm:text-3xl m-5 sm:m-10 text-teal-800'>Quiz: {question.question}</h2>
+                <div className='grid sm:grid-cols-2 gap-8 p-10'>
                     {
                         quizOption.map(singleOption => <Options
                             singleOption={singleOption}

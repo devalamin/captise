@@ -3,7 +3,9 @@ import React from 'react';
 const Topics = () => {
     return (
         <div>
-            <h2>This is topics</h2>
+            <div className='text-center bg-teal-600 py-60'>
+                <h1 className='text-white text-6xl'>Topics will be added later...</h1>
+            </div>
         </div>
     );
 };

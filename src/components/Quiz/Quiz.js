@@ -10,23 +10,27 @@ const Quiz = ({ question }) => {
 
     const quizOption = question.options;
     const eye = <FontAwesomeIcon icon={faEye}></FontAwesomeIcon>
+    const rightAns = () => {
+        toast.success(correct, { autoClose: 3000 })
+
+    }
 
     const handleClick = (event) => {
 
         if (correct === event) {
             toast.success('Correct Answer,Great!!', { autoClose: 1000, position: toast.POSITION.TOP_CENTER })
-
         }
         else {
-            toast.warn('Uppss,Wrong Answer', { autoClose: 500, position: toast.POSITION.TOP_CENTER })
+            toast.error('Uppss,Wrong Answer', { autoClose: 500, position: toast.POSITION.TOP_CENTER })
         }
-        // console.log(event)
+
     };
-    // console.log(quizOption);
+
     return (
         <div>
             <div className='relative bg-teal-100 m-10 p-10 shadow-lg'>
-                <span className='text-xl text-teal-700 absolute right-5 top-5'>{eye}</span>
+                <span onClick={rightAns} className='cursor-pointer text-xl text-teal-700 absolute right-5 top-5'>{eye}</span>
+                <ToastContainer></ToastContainer>
                 <h2 className='text-3xl m-10 text-teal-800'>Quiz: {question.question}</h2>
                 <div className='grid grid-cols-2 gap-8 p-10'>
                     {

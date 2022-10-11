@@ -1,6 +1,9 @@
-import React from 'react';
+import React, { useContext } from 'react';
+import { QuizContext } from '../layout/Main';
 
 const Topics = () => {
+
+
     return (
         <div>
             <div className='text-center bg-teal-600 py-60'>

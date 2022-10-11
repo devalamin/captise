@@ -8,7 +8,7 @@ const Options = ({ singleOption, handleClick, ToastContainer }) => {
     return (
         <div>
 
-            <button onClick={() => handleClick(singleOption)} className='option focus:border-teal-400 w-10/12 text-xl border-4 border-teal-700 py-5 px-44 shadow-lg'>
+            <button onClick={() => handleClick(singleOption)} className='option focus:border-teal-400 w-10/12 text-xl border-4 border-teal-700 py-5 px-4 shadow-lg'>
                 <span className='mr-6 text-sm'>{circle}</span>
                 {singleOption}
             </button>

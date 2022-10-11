@@ -18,7 +18,7 @@ const Quiz = ({ question }) => {
             toast.success('Correct Answer,Great!!', { autoClose: 500, position: toast.POSITION.TOP_CENTER })
         }
         else {
-            alert('Upps,Wrong Ans')
+            toast.warn('Uppss,Wrong Answer', { autoClose: 500, position: toast.POSITION.TOP_CENTER })
         }
         // console.log(event)
     };

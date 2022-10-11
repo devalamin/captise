@@ -5,11 +5,9 @@ const QuizDetails = () => {
     const singleQuiz = useLoaderData().data;
     console.log(singleQuiz)
 
-
-
     return (
         <div>
-            <h1>Quiz details</h1>
+            <h1>Quiz About {singleQuiz.name}</h1>
         </div>
     );
 };

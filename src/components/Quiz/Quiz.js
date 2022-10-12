@@ -29,7 +29,7 @@ const Quiz = ({ question }) => {
 
     return (
         <div>
-            <div className='relative bg-teal-100 sm:m-10 sm:p-10 shadow-lg'>
+            <div className='relative bg-gradient-to-r from-teal-300 to-cyan-500 sm:m-10 sm:p-10 shadow-lg'>
                 <span onClick={rightAns} className='cursor-pointer sm:text-xl text-teal-700 absolute right-5 top-10'>{eye}</span>
                 <ToastContainer></ToastContainer>
                 <h2 className='sm:text-3xl m-5 sm:m-10 text-teal-800'>Quiz: {question.question}</h2>

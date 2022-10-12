@@ -10,7 +10,7 @@ const Topic = ({ quiz }) => {
     const { id, logo, name, total } = quiz;
     return (
         <div>
-            <div className='shadow-md bg-slate-600 rounded'>
+            <div className='shadow-md bg-gradient-to-l from-cyan-300 to-slate-500 rounded'>
                 <img className='rounded' src={logo} alt="" />
                 <div className='flex justify-between bg-white p-2'>
                     <h1 className='bg-white sm:p-2 sm:text-2xl'>{name}</h1>

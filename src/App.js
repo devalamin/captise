@@ -19,7 +19,7 @@ function App() {
       children: [
         { path: '/', element: <Home></Home> },
         { path: '/home', element: <Home></Home> },
-        { path: '/topics', element: <Topics></Topics> },
+        { path: '/topics', element: <Home></Home> },
         {
           path: '/topics/:quizId',
           loader: ({ params }) => {
